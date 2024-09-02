@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ menu.name }} - Details</title>
+    
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container my-5">
+        <div class="row">
+            <div class="col-lg-6">
+                <img src="{{ menu.image.url }}" alt="{{ menu.name }}" class="img-fluid mb-4">
+            </div>
+            <div class="col-lg-6">
+                <h1>{{ menu.name }}</h1>
+                <p>{{ menu.description }}</p>
+                <p><strong>${{ menu.price }}</strong></p>
+                <!-- Дополнительные секции -->
+                {% if menu.calories %}
+                    <p><strong>Calories:</strong> {{ menu.calories }} kcal</p>
+                {% endif %}
+                {% if menu.ingredients %}
+                    <h4>Ingredients:</h4>
+                    <ul>
+                        {% for ingredient in menu.ingredients %}
+                            <li>{{ ingredient }}</li>
+                        {% endfor %}
+                    </ul>
+                {% endif %}
+                {% if menu.allergens %}
+                    <p><strong>Allergens:</strong> {{ menu.allergens }}</p>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,330 @@
+body{
+    padding-top: 140px;
+}
+.bg-custom {
+    background-image: url('../../app/static/images/1670049533_10-kartinkin-net-p-fon-dlya-saita-restorana-vkontakte-13.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; 
+    height: 100vh;
+}
+
+
+@import url('https://fonts.googleapis.com/css?family=Big+Shoulders+Text:100,300,400,500,600,700,800,900&display=swap');
+
+
+
+.custom-navbar {
+    background-color: #f4f2eb; 
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #555; 
+}
+
+.fixed-navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+.navbar-nav .nav-link {
+    color: #2d2d2d;
+    font-weight: bold;
+    font-size: 13px;
+    margin-right: 20px;
+}
+
+.navbar-nav .nav-link:hover {
+    color:green;
+}
+
+.btn-outline-dark {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.custom-navbar::before {
+    content: '';
+    display: block;
+    height: 8px;
+    background: url('wave.png') repeat-x; 
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.navbar-nav .nav-link {
+    font-family: 'Arial', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.navbar-brand {
+    margin-right: 50px;
+    
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.section-intro {
+    height: 820px;
+    background-image: url('images/13.jpg');
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-intro h1 {
+    text-align: center;
+    color: black;
+    font-size: 4em;
+    font-weight: 700;
+}
+
+.section-intro header {
+    display: flex;
+    flex: 4;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.link-to-book-wrapper {
+    flex: 1;
+}
+
+.about-section {
+    display: flex;
+    align-items: center;
+    background-color: grey;
+    padding: 50px 30px;
+}
+
+.link-to-book {
+    color: black;
+    display: block;
+    border: 2px solid yellow;
+    padding: 5px 10px;
+}
+
+a.link-to-book:hover {
+    background-color: yellow;
+    color:black;
+    text-decoration: none;
+}
+
+.about-section p,
+.about-section h3 {
+    text-align: center;
+    width: 60%;
+    margin: auto;
+    font-family: 'Big Shoulders Text', cursive;
+    font-size: 1.8em;
+    text-transform: uppercase;
+}
+
+.carousel-inner {
+    height: 700px;
+}
+
+.row-flex {
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-column-form {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin: 30px 20px;
+}
+
+.btn.btn-primary {
+    font-family: 'Big Shoulders Text', cursive;
+    color: #ffffff;
+    background-color: #95999e;
+    text-transform: uppercase;
+    font-size: 16px;
+    padding: 5px 10px;
+    letter-spacing: 2px;
+    border: 0;
+}
+
+.btn.btn-primary:hover {
+    background-color: #747474;
+}
+.opening-time,
+.contact-adress {
+    flex: 1;
+    margin: 30px 20px;
+    font-size: 1.2em;
+}
+
+.form-group p {
+    font-size: 1.2em;
+}
+
+.opening-time p span,
+.contact-adress p span {
+    display: block;
+}
+
+@media (min-width:577px) and (max-width: 800px) {
+
+    .section-intro {
+        height: 500px;
+    }
+
+    .about-section p,
+    .about-section h3 {
+        font-size: 20px;
+    }
+
+    .carousel-inner {
+        height: auto;
+    }
+
+    .row-flex {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .section-intro {
+        height: 300px;
+    }
+
+    .about-section {
+        padding: 30px;
+    }
+
+    .section-intro h1 {
+        font-size: 2em;
+    }
+
+    .about-section p,
+    .about-section h3 {
+        font-size: 15px;
+    }
+
+    .carousel-inner {
+        height: auto;
+    }
+
+    .row-flex {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .row-flex h3 {
+        font-size: 25px;
+        text-align: center;
+    }       
+
+    .form-group p {
+        font-size: 15px;
+    }
+
+    .opening-time p span,
+    .contact-adress p span {
+        font-size: 15px;
+        text-align: center;
+    }
+
+}
+
+.container-fluid cl{
+    margin-top:20px;
+}
+.col-md-12 text-center h1,p{
+    font-family: 'Big Shoulders Text', cursive;
+    font-size:20px;
+}
+
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+   
+}
+
+.footer .container {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer .footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+  
+}
+
+.footer .footer-section {
+    flex: 1;
+    margin: 20px;
+}
+
+.footer .footer-section h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.footer .footer-section p, .footer .footer-section a, .footer .footer-section ul {
+    font-size: 18px;
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+
+.footer .footer-section a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    font-size: 30px;
+   
+   
+}
+
+.footer .footer-section a:hover {
+    color: #ddd;
+}
+
+.footer .footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer .footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer .footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    border-top: 1px solid #555;
+    padding-top: 10px;
+    font-size: 14px;
+}
+
+.footer .footer-section a:hover{
+    background-color:green;
+    color:white;
+    transition: 1.s;
+}
+
+
+
